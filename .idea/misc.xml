@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/arrow_left.xml" value="0.1305" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/camera.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/chat.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/devices.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/folder.xml" value="0.1305" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/language.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/lock.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/menu.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/notification.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/power.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/premium.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/privacy.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/profile_img.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/qr.xml" value="0.109" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/question_mark.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable-v24/storage.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable/chat.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/M-Deif/AndroidStudioProjects/profiletelegram/app/src/main/res/layout/activity_main.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="Embedded JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

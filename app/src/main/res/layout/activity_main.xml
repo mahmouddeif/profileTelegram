@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#121212"
+        android:src="@drawable/profile_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/qr"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#121212"
+        android:src="@drawable/qr"
+        app:layout_constraintEnd_toStartOf="@id/menu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="150dp"
+        android:text="Mahmoud deif"
+        android:textColor="#fefefe"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/online"
+        app:layout_constraintStart_toStartOf="@id/online" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="online"
+        android:textColor="#b8b8b8"
+        app:layout_constraintBottom_toBottomOf="@id/profile_picture"
+        app:layout_constraintStart_toStartOf="@+id/arrow_back" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="15dp"
+        android:background="#121212"
+        android:src="@drawable/camera"
+        app:layout_constraintBottom_toBottomOf="@id/profile_picture"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/menu"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:background="#121212"
+        android:src="@drawable/menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/arrow_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#121212"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_picture">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scroll2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/account"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#121212"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:text="Account"
+                android:textColor="@color/light_blue_A700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/scroll2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:paddingStart="15dp"
+                android:text="01111812368"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/account"
+                app:layout_constraintTop_toBottomOf="@id/account" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/change_phone"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#121212"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:text="Tap to change phone number"
+                android:textColor="#747476"
+                app:layout_constraintStart_toStartOf="@+id/phone_number"
+                app:layout_constraintTop_toBottomOf="@id/phone_number" />
+
+            <View
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/change_phone"
+                app:layout_constraintTop_toBottomOf="@id/change_phone" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:paddingStart="15dp"
+                android:text="mahmoud deif"
+                android:textColor="#fefefe"
+                app:layout_constraintStart_toStartOf="@id/space"
+                app:layout_constraintTop_toBottomOf="@id/space" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/user_name2"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#121212"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:text="User name"
+                android:textColor="#747476"
+                app:layout_constraintStart_toStartOf="@+id/user_name"
+                app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+            <View
+                android:id="@+id/space2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/user_name2"
+                app:layout_constraintTop_toBottomOf="@id/user_name2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/your_bio"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#121212"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:text="your bio"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/space2"
+                app:layout_constraintTop_toBottomOf="@id/space2" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_bio"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#121212"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:text="Bio"
+                android:textColor="@color/grey_700"
+                app:layout_constraintStart_toStartOf="@+id/your_bio"
+                app:layout_constraintTop_toBottomOf="@id/your_bio" />
+
+            <View
+                android:id="@+id/space3"
+                android:layout_width="wrap_content"
+                android:layout_height="11dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/text_bio"
+                app:layout_constraintTop_toBottomOf="@id/text_bio" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Settings"
+                android:textColor="@color/light_blue_A700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/space3"
+                app:layout_constraintTop_toBottomOf="@id/space3" />
+
+            <View
+                android:id="@+id/space4"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/settings"
+                app:layout_constraintTop_toBottomOf="@id/settings" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/icon_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:drawableStart="@drawable/chat"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Chat settings"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/space4"
+                app:layout_constraintTop_toBottomOf="@id/space4" />
+
+            <View
+                android:id="@+id/space5"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/icon_chat"
+                app:layout_constraintTop_toBottomOf="@id/icon_chat" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Privacy and security"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/space5"
+                app:layout_constraintTop_toBottomOf="@id/space5" />
+
+            <View
+                android:id="@+id/space6"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/privacy"
+                app:layout_constraintTop_toBottomOf="@id/privacy" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:drawableStart="@drawable/notification"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Notification and sounds"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/space6"
+                app:layout_constraintTop_toBottomOf="@id/space6" />
+
+            <View
+                android:id="@+id/space7"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/notification"
+                app:layout_constraintTop_toBottomOf="@id/notification" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/data_and_storage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:drawableStart="@drawable/storage"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Data and storage"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/space7"
+                app:layout_constraintTop_toBottomOf="@id/space7" />
+
+            <View
+                android:id="@+id/space8"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/data_and_storage"
+                app:layout_constraintTop_toBottomOf="@id/data_and_storage" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/power_saving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:drawableStart="@drawable/power"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Power saving"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/space8"
+                app:layout_constraintTop_toBottomOf="@id/space8" />
+
+            <View
+                android:id="@+id/space9"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/power_saving"
+                app:layout_constraintTop_toBottomOf="@id/power_saving" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/chat_folder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:drawableStart="@drawable/folder"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Chat folder"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/space9"
+                app:layout_constraintTop_toBottomOf="@id/space9" />
+
+            <View
+                android:id="@+id/space10"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/chat_folder"
+                app:layout_constraintTop_toBottomOf="@id/chat_folder" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/devices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:drawableStart="@drawable/devices"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Devices"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/space10"
+                app:layout_constraintTop_toBottomOf="@id/space10" />
+
+            <View
+                android:id="@+id/space11"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/devices"
+                app:layout_constraintTop_toBottomOf="@id/devices" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:drawableStart="@drawable/language"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Language"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/space11"
+                app:layout_constraintTop_toBottomOf="@id/space11" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/eng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:background="#121212"
+                android:drawablePadding="5dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="English"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="@id/language"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/language" />
+
+
+            <View
+                android:id="@+id/space12"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/language"
+                app:layout_constraintTop_toBottomOf="@id/language" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/premium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:drawableStart="@drawable/premium"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Telegram premium"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@id/space12"
+                app:layout_constraintTop_toBottomOf="@id/space12" />
+
+            <View
+                android:id="@+id/space13"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/premium"
+                app:layout_constraintTop_toBottomOf="@id/premium" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:text="Help"
+                android:textColor="@color/light_blue_A700"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/space13"
+                app:layout_constraintTop_toBottomOf="@id/space13" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/ask_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#121212"
+                android:drawableStart="@drawable/chat"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Ask question"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/help"
+                app:layout_constraintTop_toBottomOf="@id/help" />
+
+            <View
+                android:id="@+id/space14"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/ask_question"
+                app:layout_constraintTop_toBottomOf="@id/ask_question" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/telegram_faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#121212"
+                android:drawableStart="@drawable/question_mark"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Telegram FAQ"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/space14"
+                app:layout_constraintTop_toBottomOf="@id/space14" />
+
+            <View
+                android:id="@+id/space15"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/telegram_faq"
+                app:layout_constraintTop_toBottomOf="@id/telegram_faq" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="#121212"
+                android:drawableStart="@drawable/privacy"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:text="Privacy policy"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/telegram_faq"
+                app:layout_constraintTop_toBottomOf="@id/telegram_faq" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.motion.widget.MotionLayout>
